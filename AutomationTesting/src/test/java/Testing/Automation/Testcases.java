@@ -29,7 +29,7 @@ public class Testcases {
 		System.setProperty("webdriver.chrome.driver" , "D:\\testingproject\\AutomationTesting\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to("https://www.google.com");
+		driver.navigate().to("https://www.facebook.com");
 		
 	}
 	@Test
@@ -43,6 +43,9 @@ public class Testcases {
 	  
 	@Test(priority=0)
 	public void testcase1() throws InterruptedException {
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getPageSource());
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,500)");
 		Thread.sleep(3000);
