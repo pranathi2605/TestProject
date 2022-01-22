@@ -12,6 +12,8 @@ public class Alerts {
 	@BeforeTest
 	public void LaunchBrowser() {
 		
+		//learning automation testing the tool is selenium webdriver 
+		//programming language is java
 	
 	System.setProperty("webdriver.chrome.driver" , "D:\\testingproject\\AutomationTesting\\Drivers\\chromedriver.exe");
 	driver = new ChromeDriver();
