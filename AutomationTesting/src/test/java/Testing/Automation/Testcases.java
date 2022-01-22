@@ -29,7 +29,7 @@ public class Testcases {
 		System.setProperty("webdriver.chrome.driver" , "D:\\testingproject\\AutomationTesting\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to("https://www.facebook.com");
+		driver.navigate().to("https://www.google.com");
 		
 	}
 	@Test
